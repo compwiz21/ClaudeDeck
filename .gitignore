@@ -26,3 +26,8 @@ npm-debug.log*
 
 # Stream Deck
 *.streamDeckPlugin
+com.claudedeck.sdPlugin/bin/
+com.claudedeck.sdPlugin/logs/
+
+# Planning/research (local only)
+.planning/

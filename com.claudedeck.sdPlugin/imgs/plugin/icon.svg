@@ -1,0 +1,8 @@
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="32" fill="#1E1B4B"/>
+  <text x="128" y="100" text-anchor="middle" fill="#A78BFA" font-family="Arial, sans-serif" font-size="48" font-weight="bold">CD</text>
+  <rect x="48" y="130" width="160" height="8" rx="4" fill="#6B4FBB"/>
+  <polygon points="88,155 88,210 138,182" fill="#22C55E"/>
+  <circle cx="178" cy="170" r="8" fill="#F59E0B"/>
+  <circle cx="178" cy="200" r="8" fill="#EF4444"/>
+</svg>

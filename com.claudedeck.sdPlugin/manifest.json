@@ -1,0 +1,73 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "Author": "ClaudeDeck",
+  "Name": "ClaudeDeck",
+  "Description": "Launch and manage multiple Claude Code CLI sessions from your Stream Deck",
+  "Icon": "imgs/plugin/icon",
+  "CategoryIcon": "imgs/plugin/category",
+  "Category": "ClaudeDeck",
+  "UUID": "com.claudedeck.plugin",
+  "Version": "0.1.0.0",
+  "SDKVersion": 2,
+  "CodePath": "bin/plugin.js",
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Actions": [
+    {
+      "UUID": "com.claudedeck.plugin.launch",
+      "Name": "Launch Claude Session",
+      "Icon": "imgs/actions/launch/icon",
+      "Tooltip": "Launch a new Claude Code session in a Windows Terminal tab",
+      "PropertyInspectorPath": "ui/launch.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/launch/key",
+          "TitleAlignment": "bottom",
+          "Title": "Launch"
+        }
+      ]
+    },
+    {
+      "UUID": "com.claudedeck.plugin.tile",
+      "Name": "Session Tile",
+      "Icon": "imgs/actions/tile/icon",
+      "Tooltip": "Shows live status of a Claude Code session — press to focus its terminal tab",
+      "PropertyInspectorPath": "ui/tile.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/tile/key",
+          "TitleAlignment": "bottom",
+          "Title": "Idle"
+        }
+      ]
+    },
+    {
+      "UUID": "com.claudedeck.plugin.kill",
+      "Name": "Kill Session",
+      "Icon": "imgs/actions/kill/icon",
+      "Tooltip": "Terminate a Claude Code session",
+      "PropertyInspectorPath": "ui/kill.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/kill/key",
+          "TitleAlignment": "bottom",
+          "Title": "Kill"
+        }
+      ]
+    }
+  ]
+}
